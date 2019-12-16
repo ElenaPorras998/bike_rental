@@ -1,0 +1,131 @@
+/**
+  The following file contains all the styles for the website.
+  The color codes used are:
+    - dark blue = #1F2833
+    - mid blue = #45A29E
+    - light blue = #66FCF1
+ */
+
+* {
+    font-family: 'Oxygen', sans-serif;
+}
+
+body {
+    display: grid;
+    margin-top: -5px;
+    background-color: #1F2833;
+    grid-gap: 20px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 3.5rem auto;
+    grid-template-areas:
+      "header header header header"
+      ". notifications notifications ."
+      ". content content .";
+}
+
+div#notifications {
+    grid-area: notifications;
+}
+
+div#notifications .notification {
+    background-color: yellow;
+    margin-top: 5px;
+    padding: 3px;
+    border-radius: 5px;
+    color: #1F2833;
+}
+
+.notification span {
+    padding: 5px;
+    font-weight: bold;
+}
+
+div.navbar {
+    grid-area: header;
+    border-bottom: 3px solid #45A29E;
+    color: white;
+}
+
+div.navbar nav {
+    margin: 5px;
+    margin-right: 120px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+div.navbar nav a {
+    font-size: 1rem;
+    margin: 10px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+div#content {
+    grid-area: content;
+}
+
+.heading2 {
+    color: #FFFFFF;
+}
+
+.paragraph {
+    color: #6B6E70;
+}
+
+div.auth {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 4rem auto;
+    grid-template-areas:
+      ". form-title ."
+      ". box .";
+}
+
+.form-title {
+    font-size: 2rem;
+    color: #FFFFFF;
+    grid-area: form-title;
+}
+
+.box {
+    grid-area: box;
+}
+
+input.text-input {
+    color: #0B0C10;
+    height: 32px;
+    width: 75%;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 0;
+}
+
+#code {
+    background-color: #C5C6C7;
+}
+
+.field {
+    margin: 10px;
+}
+
+.button {
+    background-color: #45A29E;
+    border-radius: 10px;
+    width: 76%;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+label {
+    color: white;
+}
+
+.map {
+    width:650px;
+    height:500px;
+}

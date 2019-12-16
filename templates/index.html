@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title%} Bicicle Tracker {% endblock %}
+{% block scripts %}
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block content %}
+    <div>
+        <h2 class="heading2">Tracker</h2>
+        <p class="paragraph">The following map displays the location of each electric bicycle.</p>
+    </div>
+    <div>
+        <div id="map" class="map"></div>
+    </div>
+    <script src="../static/scripts/script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=&callback=init"></script>
+{% endblock %}
